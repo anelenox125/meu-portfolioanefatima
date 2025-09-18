@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #86cc78;
+        }
+        header {
+            background: #333;
+            color: #fdfcfc;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #f8faf6;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #f8fafa;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgb(19, 17, 17);
+        }
+        .perfil {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+        .perfil img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .sobre {
+            flex: 1;
+        }
+        h2 {
+            color: #110f0f;
+        }
+        .projetos {
+            margin-top: 2rem;
+        }
+        .projeto {
+            background: #cfeeb1;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            color: #0a0a0a; /* Nova cor da fonte */
+}
+         .projeto img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            border-radius: 0 0 8px 8px;
+        }
+             /* Responsividade para tablets */
+        @media (max-width: 900px) {
+            .container {
+                padding: 1rem;
+            }
+            .perfil {
+                flex-direction: column;
+                text-align: center;
+            }
+            .sobre {
+                width: 100%;
+            }
+        }
+        /* Responsividade para celulares */
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem 0.5rem;
+            }
+            .container {
+                margin: 1rem;
+                padding: 0.5rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            .projeto img {
+                max-width: 100%;
+            }
+        }
+        }
+        @media (max-width: 600px) {
+            .perfil {
+                flex-direction: column;
+                text-align: center;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anefátima Figueiredo</h1>
+        <nav>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="perfil" id="sobre">
+            <img src="foto de perfil.jpg" alt="Foto de perfil">
+            <div class="sobre">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Bibliotecária e Médica Veternária Pós Graduada em Oncologia Veterinária. Amo cuidar dos animais e estou adquirindo novas experiência em tecnologia como Desenvolvedora Back End.</p>
+        <section class="perfil" id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Leitura</li>
+                <li>Viajar</li>
+                <li>Artesananto</li>
+            </ul>
+            </div>
+        </section>
+        <section class="projetos" id="projetos">
+            <h2>Projetos</h2>
+            <div class="projeto">
+                <h3>Projeto 1</h3>
+                <img src="foto pet.jpg" alt="foto pet" style="width:100%;max-width:100px;border-radius:8px;margin-bottom:1rem;">
+                <p>Criar uma API para gerenciamento de consultas veterinárias</p>
+                <p>1. Estrutura do Projeto
+                <br>Páginas principais:
+                <li>Home: Apresentação da clínica, serviços oferecidos e informações de contato.</li>
+                <li>Serviços: Lista de serviços veterinários (consultas, vacinas, exames, etc.).</li>
+                <li>Agendamento: Formulário para marcar consultas.</li>
+                <li>Equipe: Apresentação dos veterinários e equipe.</li>
+                <li>Contato: Formulário para dúvidas e mapa da localização.</li>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 2</h3>
+                <img src="biblioteca.jpg" alt="biblioteca" style="width:100%;max-width:200px;border-radius:8px;margin-bottom:1rem;">
+                <p>Criar Criar um Sistema de Gerenciamento para Bibliotecas</p>
+                <li>Home: Apresentação da biblioteca, serviços oferecidos e informações de contato.</li>
+                <li>Catálogo: Lista de livros disponíveis para consulta.</li>
+                <li>Empréstimo: Formulário para solicitar empréstimos de livros.</li>
+                <li>Equipe: Apresentação dos bibliotecários e equipe.</li>
+                <li>Contato: Formulário para dúvidas e mapa da localização.</li>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: anelenox.vet.domiciliar@gmail.com</p>
+            <p>LinkedIn: <a href="#" target="_blank">Anefátima Figueiredo</a></p>
+            <p>Redes Sociais:</p>
+    <ul style="list-style: none; padding: 0;">
+        <li>
+            <a href="https://www.instagram.com/_anefigueiredo/?hl=pt-br" target="_blank">Instagram</a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/_anefigueiredo" target="_blank">Facebook</a>
+        </li>
+    </ul>
+</section>
+        </section>        </div>
+    <footer>
+        <p>&copy; 2025 Anefátima Figueiredo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+    </div>
+</body>
